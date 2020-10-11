@@ -1,0 +1,113 @@
+/* Layout */
+
+*,
+*::after,
+*::before {
+    font-family: "open sans";
+}
+
+.wrap-art {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:800px;
+    height:300px;
+    margin: 5rem auto 0;
+    box-shadow: 0px 0px 13px -2px rgba(0,0,0,0.75);
+    border-radius: .6rem;
+    -webkit-border-radius: .6rem;
+    -moz-border-radius: .6rem;
+    -ms-border-radius: .6rem;
+    -o-border-radius: .6rem;
+}
+
+.wrap-art__text {
+    flex-grow:1;
+    flex-shrink: 4;
+    flex-basis: 300px;
+
+    padding:1.5rem;
+
+    
+}
+
+.wrap-art__img{
+    flex-grow:1;
+    flex-shrink: 1;
+    flex-basis:250px;
+    overflow: hidden;
+    height: inherit;
+   
+
+
+}
+.wrap-art__by {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding:1rem 0;
+
+}
+
+.wrap-art__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+/* Estilos imagen */
+
+
+.wrap-art__img > img{
+    height:inherit;
+    width:100%;
+    border-bottom-left-radius: .5rem;
+    border-top-left-radius: .5rem;
+    object-fit: cover;
+    object-position:  bottom;
+
+}
+/* by */
+
+.wrap-art__text h2 {
+    font-size: 1.3rem;
+    text-align: start;
+    color:#666;
+}
+
+.wrap-art__p {
+    font-size: .9rem;
+    padding-bottom: .5rem;
+    color:#333;
+}
+
+.wrap-art__by img {
+    width:40px;
+    height:40px;
+    margin-right: 1rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+/* info */
+
+.wrap-art__info p{
+    padding:0;
+    margin:0;
+    margin-right: 2rem;
+}
+
+.wrap-art__name {
+    font-weight: bold;
+    display: block;
+    padding:1rem;
+}
+
+.wrap-art__date {
+    font-size: .8rem;
+    padding:1rem;
+}
