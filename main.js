@@ -8,22 +8,15 @@ const $cardShare = document.querySelector(".card-media")
 function clickBtn (e) {
     if (e.target.matches(".wrap-art__btn")){
      
-   /*      setTimeout(() => {
+    $cardShareClass = getComputedStyle($cardShare).getPropertyValue("visibility")
 
-            
-            if (getComputedStyle($cardShare).getPropertyValue("visibility") == 'visible') {
-                $cardShare.style.setProperty("visibility", "hidden")
-            }
     
-            if (getComputedStyle($cardShare).getPropertyValue("visibility") == 'hidden') {
-                $cardShare.style.setProperty("visibility", "visible")
-            }
-    
-        }, 100)
- */
 
-        $cardShare.classList.toggle("card-media")
-     
+    if ($cardShareClass == "visible"){
+        $cardShare.style.setProperty("visibility", "hidden")
+    } else {
+        $cardShare.style.setProperty("visibility", "visible")
+    }     
     
 
 
@@ -32,7 +25,9 @@ function clickBtn (e) {
     }
 }
 
-d.addEventListener("click", e => {
+$btnShare.addEventListener("click", e => {
+
+    console.log("hola")
 
     clickBtn(e)
 

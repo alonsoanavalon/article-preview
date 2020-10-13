@@ -151,6 +151,23 @@ p {
     -moz-border-radius: .5rem;
     -ms-border-radius: .5rem;
     -o-border-radius: .5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.card-media p {
+    color:#ddd;
+    letter-spacing:.2rem;
+}
+
+#i-facebook,
+#i-pinterest,
+#i-twitter {
+    color:white;
+    padding-right:.7rem;
 }
 
 
@@ -176,4 +193,43 @@ p {
         width:300px;
         height:auto;
     }
+    
+    .card-media {
+        height:100px;
+        top:35px;
+        left:-246px;
+        width:300px;
+        border-radius:0 0 1rem 1rem ;
+        -webkit-border-radius:0 0 1rem 1rem ;
+        -moz-border-radius:0 0 1rem 1rem ;
+        -ms-border-radius:0 0 1rem 1rem ;
+        -o-border-radius:0 0 1rem 1rem ;
+    }
+    
+    .triangle {
+        visibility: hidden;
+    }
+    
+    .wrap-art__by {
+        visibility: hidden;
+    }
+
+    .wrap-art__img > img {
+        border-radius: 1rem 1rem 0 0;
+        -webkit-border-radius: 1rem 1rem 0 0;
+        -moz-border-radius: 1rem 1rem 0 0;
+        -ms-border-radius: 1rem 1rem 0 0;
+        -o-border-radius: 1rem 1rem 0 0;
+    }
+
+    .wrap-art__text {
+        border-radius: 0 0 1rem 1rem;
+        -webkit-border-radius: 0 0 1rem 1rem;
+        -moz-border-radius: 0 0 1rem 1rem;
+        -ms-border-radius: 0 0 1rem 1rem;
+        -o-border-radius: 0 0 1rem 1rem;
 }
+    
+}
+
+
